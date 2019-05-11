@@ -4,13 +4,17 @@
   "version": "1.0.0",
   "author": "Hunter Chang",
   "dependencies": {
+    "bootstrap": "^4.3.1",
     "gatsby": "^2.2.9",
     "gatsby-plugin-manifest": "^2.0.24",
     "gatsby-plugin-offline": "^2.0.25",
     "gatsby-plugin-react-helmet": "^3.0.10",
     "gatsby-plugin-sass": "^2.0.11",
+    "gatsby-plugin-sharp": "^2.0.37",
+    "gatsby-transformer-sharp": "^2.1.19",
     "node-sass": "^4.11.0",
     "react": "^16.8.5",
+    "react-bootstrap": "^1.0.0-beta.8",
     "react-dom": "^16.8.5",
     "react-helmet": "^5.2.0"
   },

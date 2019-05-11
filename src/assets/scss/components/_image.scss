@@ -84,4 +84,35 @@
 				margin: (_size(element-margin) * 0.75) 0;
 			}
 		}
+
+		&.minor {
+			display: block;
+			margin: (_size(element-margin) * 1.25) auto;
+			width: 40%;
+			height: 50%;
+			border-radius: 15px 30px 45px 7.5px;
+		
+			
+
+			img {
+				width: 100%;
+				height:50%;
+				border-radius: 15px 30px 45px 7.5px;
+
+				
+			}
+		}
+
+		@include breakpoint(small) {
+			&.minor {
+				margin: (_size(element-margin) * 1) 0;
+			}
+		}
+
+		@include breakpoint(xsmall) {
+			&.minor {
+				margin: (_size(element-margin) * 0.75) 0;
+			}
+		}
 	}
+	

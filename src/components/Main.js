@@ -1,9 +1,11 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import {Card} from 'react-bootstrap'
 
-import pic01 from '../images/pic01.jpg'
+// import pic01 from '../images/pic01.jpg'
 import pic02 from '../images/pic02.jpg'
 import pic03 from '../images/pic03.jpg'
+import avatar from '../images/avatar.jpg'
 
 class Main extends React.Component {
   render() {
@@ -11,32 +13,112 @@ class Main extends React.Component {
     let close = <div className="close" onClick={() => {this.props.onCloseArticle()}}></div>
 
     return (
-      <div ref={this.props.setWrapperRef} id="main" style={this.props.timeout ? {display: 'flex'} : {display: 'none'}}>
-
-        <article id="intro" className={`${this.props.article === 'intro' ? 'active' : ''} ${this.props.articleTimeout ? 'timeout' : ''}`} style={{display:'none'}}>
+      <div
+        ref={this.props.setWrapperRef}
+        id="main"
+        style={
+          this.props.timeout ? { display: 'flex' } : { display: 'none' }
+        }
+      >
+        <article
+          id="intro"
+          className={`${this.props.article === 'intro' ? 'active' : ''} ${
+            this.props.articleTimeout ? 'timeout' : ''
+          }`}
+          style={{ display: 'none' }}
+        >
           <h2 className="major">Intro</h2>
-          <span className="image main"><img src={pic01} alt="" /></span>
-          <p>Aenean ornare velit lacus, ac varius enim ullamcorper eu. Proin aliquam facilisis ante interdum congue. Integer mollis, nisl amet convallis, porttitor magna ullamcorper, amet egestas mauris. Ut magna finibus nisi nec lacinia. Nam maximus erat id euismod egestas. By the way, check out my <a href="#work">awesome work</a>.</p>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis dapibus rutrum facilisis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Etiam tristique libero eu nibh porttitor fermentum. Nullam venenatis erat id vehicula viverra. Nunc ultrices eros ut ultricies condimentum. Mauris risus lacus, blandit sit amet venenatis non, bibendum vitae dolor. Nunc lorem mauris, fringilla in aliquam at, euismod in lectus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. In non lorem sit amet elit placerat maximus. Pellentesque aliquam maximus risus, vel sed vehicula.</p>
+          <span className="image minor">
+            <img src={avatar} alt=""/>
+          </span>
+          <p>
+            JavaScript Web Developer, learning as much as I can in software
+            development.
+            <br />
+          </p>
+          <p>Enjoying the journey!</p>
           {close}
         </article>
 
-        <article id="work" className={`${this.props.article === 'work' ? 'active' : ''} ${this.props.articleTimeout ? 'timeout' : ''}`} style={{display:'none'}}>
-          <h2 className="major">Work</h2>
-          <span className="image main"><img src={pic02} alt="" /></span>
-          <p>Adipiscing magna sed dolor elit. Praesent eleifend dignissim arcu, at eleifend sapien imperdiet ac. Aliquam erat volutpat. Praesent urna nisi, fringila lorem et vehicula lacinia quam. Integer sollicitudin mauris nec lorem luctus ultrices.</p>
-          <p>Nullam et orci eu lorem consequat tincidunt vivamus et sagittis libero. Mauris aliquet magna magna sed nunc rhoncus pharetra. Pellentesque condimentum sem. In efficitur ligula tate urna. Maecenas laoreet massa vel lacinia pellentesque lorem ipsum dolor. Nullam et orci eu lorem consequat tincidunt. Vivamus et sagittis libero. Mauris aliquet magna magna sed nunc rhoncus amet feugiat tempus.</p>
+        <article
+          id="work"
+          className={`${this.props.article === 'work' ? 'active' : ''} ${
+            this.props.articleTimeout ? 'timeout' : ''
+          }`}
+          style={{ display: 'none' }}
+        >
+          <h2 className="major">Salt Lake Stars Moblie App</h2>
+          <h3 className="minor">
+            Helio Training | Larry H Miller Group Collaborative Project
+          </h3>
+          <span className="image main">
+            <img src={pic02} alt="" />
+          </span>
+          <p>
+            Mobile App for the Salt Lake Stars Basketball team. Built with
+            React Native, I focused on frontend development where I helped
+            style and implement client requested navigation and displaying
+            appropriate data from the API.
+          </p>
+          <p>
+            Download the app <a href="http://somesite.com">here!</a>
+          </p>
+
+          <h2 className="major">Personal Fitness Web App</h2>
+          <span className="image main">
+            <img src={pic02} alt="" />
+          </span>
+          <p>
+            Full Stack web app built with ReactJS, Express, NodeJS, and
+            MongoDB. Built to track weightlifting activity. Includes user
+            authentication for multiple users.
+          </p>
+          <p>
+            Check out the demo <a href="http://www.somesite.com">here!</a>
+          </p>
           {close}
         </article>
 
-        <article id="about" className={`${this.props.article === 'about' ? 'active' : ''} ${this.props.articleTimeout ? 'timeout' : ''}`} style={{display:'none'}}>
+        <article
+          id="about"
+          className={`${this.props.article === 'about' ? 'active' : ''} ${
+            this.props.articleTimeout ? 'timeout' : ''
+          }`}
+          style={{ display: 'none' }}
+        >
           <h2 className="major">About</h2>
-          <span className="image main"><img src={pic03} alt="" /></span>
-          <p>Lorem ipsum dolor sit amet, consectetur et adipiscing elit. Praesent eleifend dignissim arcu, at eleifend sapien imperdiet ac. Aliquam erat volutpat. Praesent urna nisi, fringila lorem et vehicula lacinia quam. Integer sollicitudin mauris nec lorem luctus ultrices. Aliquam libero et malesuada fames ac ante ipsum primis in faucibus. Cras viverra ligula sit amet ex mollis mattis lorem ipsum dolor sit amet.</p>
+          <span className="image main">
+            <img src={pic03} alt="" />
+          </span>
+          <p>
+            Based in Salt Lake City, Utah, passionate about full stack
+            development. Looking to utilize my talents to further my career
+            in industry. Completed Helio Training's Full Stack Web
+            Development bootcamp where I discovered my passion for
+            development and got me set in the right direction. Becoming more
+            passionate every day I code!
+          </p>
+          <Card bg="primary" text="white" style={{ width: '18rem' }}>
+            <Card.Header>Header</Card.Header>
+            <Card.Body>
+              <Card.Title>Primary Card Title</Card.Title>
+              <Card.Text>
+                Some quick example text to build on the card title and make
+                up the bulk of the card's content.
+              </Card.Text>
+            </Card.Body>
+          </Card>
+
           {close}
         </article>
 
-        <article id="contact" className={`${this.props.article === 'contact' ? 'active' : ''} ${this.props.articleTimeout ? 'timeout' : ''}`} style={{display:'none'}}>
+        <article
+          id="contact"
+          className={`${this.props.article === 'contact' ? 'active' : ''} ${
+            this.props.articleTimeout ? 'timeout' : ''
+          }`}
+          style={{ display: 'none' }}
+        >
           <h2 className="major">Contact</h2>
           <form method="post" action="#">
             <div className="field half first">
@@ -49,22 +131,45 @@ class Main extends React.Component {
             </div>
             <div className="field">
               <label htmlFor="message">Message</label>
-              <textarea name="message" id="message" rows="4"></textarea>
+              <textarea name="message" id="message" rows="4" />
             </div>
             <ul className="actions">
-              <li><input type="submit" value="Send Message" className="special" /></li>
-              <li><input type="reset" value="Reset" /></li>
+              <li>
+                <input
+                  type="submit"
+                  value="Send Message"
+                  className="special"
+                />
+              </li>
+              <li>
+                <input type="reset" value="Reset" />
+              </li>
             </ul>
           </form>
           <ul className="icons">
-            <li><a href="#" className="icon fa-twitter"><span className="label">Twitter</span></a></li>
-            <li><a href="#" className="icon fa-facebook"><span className="label">Facebook</span></a></li>
-            <li><a href="#" className="icon fa-instagram"><span className="label">Instagram</span></a></li>
-            <li><a href="#" className="icon fa-github"><span className="label">GitHub</span></a></li>
+            <li>
+              <a href="#" className="icon fa-twitter">
+                <span className="label">Twitter</span>
+              </a>
+            </li>
+            <li>
+              <a href="#" className="icon fa-facebook">
+                <span className="label">Facebook</span>
+              </a>
+            </li>
+            <li>
+              <a href="#" className="icon fa-instagram">
+                <span className="label">Instagram</span>
+              </a>
+            </li>
+            <li>
+              <a href="#" className="icon fa-github">
+                <span className="label">GitHub</span>
+              </a>
+            </li>
           </ul>
           {close}
         </article>
-
       </div>
     )
   }
