@@ -60,10 +60,10 @@ class Main extends React.Component {
             appropriate data from the API.
           </p>
           <p>
-            Download the app <a href="http://somesite.com">here!</a>
+            Download the app <a href="https://saltlakecity.gleague.nba.com/">here!</a>
           </p>
 
-          <h2 className="major">Personal Fitness Web App</h2>
+          <h2 className="major">Personal Fitness App</h2>
           <span className="image main">
             <img src={pic02} alt="" />
           </span>
