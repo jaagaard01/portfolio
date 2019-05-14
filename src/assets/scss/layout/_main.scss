@@ -111,9 +111,10 @@
 	}
 
 	.skillsContainer{
-		-webkit-columns: 80px 3;
-		columns: 80px 3;
+		-webkit-columns:3;
+		columns: 3;
 		height: 100px;
-		width: auto;
+		width: 100%;
+		
 		
 	}
