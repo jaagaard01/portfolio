@@ -68,12 +68,22 @@ class Main extends React.Component {
             <img src={pic02} alt="" />
           </span>
           <p>
-            Full Stack web app built with ReactJS, Express, NodeJS, and
-            MongoDB. Built to track weightlifting activity.
+          Utilized React and Axios to build out an interactive Frontend, while using Express, Node.JS, 
+          and MongoDB to implement the Backend functions and to access the Mongo Database.
+          Built to track weightlifting activity.
           </p>
           <p>
-            Check out the demo <a href="http://www.somesite.com">here!</a>
+            Check out the demo <a href="https://github.com/jaagaard01/react-server-frontend">here!</a>
           </p>
+          <h2 className="major">Workout Randomizer App</h2>
+          <span className="image main">
+            <img src={pic02} alt="" />
+          </span>
+          <p>
+          Currently building a workout randomizer in React to help people mix up workout routines. 
+          By switching up routines it keeps working out fun and exciting and helps from hitting a plateau. 
+          </p>
+          
           {close}
         </article>
 
