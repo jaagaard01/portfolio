@@ -113,10 +113,17 @@
 	}
 
 	.skillsContainer{
-		-webkit-columns:3;
-		columns: 3;
-		height: 100px;
-		max-width: 100%;
+		-webkit-columns: 3 80px;
+		-moz-columns: 3 80px;
+			 columns: 3 80px;
+	 -webkit-column-gap: 2em;
+		-moz-column-gap: 2em;
+			 column-gap: 2em;
+			 -moz-column-fill: auto;
+			   column-fill: auto;
+			   height: 5em;
 		box-sizing: content-box;
+		border: 1px solid black;
+		
 		
 	}
