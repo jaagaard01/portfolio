@@ -73,7 +73,7 @@ class Main extends React.Component {
           Built to track weightlifting activity.
           </p>
           <p>
-            Check the app out<a href="https://github.com/jaagaard01/react-server-frontend">here!</a>
+            Check the app out <a href="https://github.com/jaagaard01/react-server-frontend">here!</a>
           </p>
           <h2 className="major">Workout Randomizer App</h2>
           <span className="image main">
