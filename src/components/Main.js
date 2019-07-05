@@ -1,7 +1,10 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-
-
+import homeStars from '../images/home-stars.png'
+import rosterStars from '../images/roster-stars.png'
+import workoutApp from '../images/workout-app.png'
+import appModal from '../images/modal-app.png'
+import randomPic from '../images/random.png'
 
 import pic02 from '../images/pic02.jpg'
 import avatar from '../images/avatar.jpg'
@@ -50,8 +53,10 @@ class Main extends React.Component {
           <h3 className="minor">
             Helio Training | Larry H Miller Group Collaborative Project
           </h3>
-          <span className="image main">
-            <img src={pic02} alt="" />
+          <span className="image main2">
+            <img src={homeStars} alt="" />
+            <img src={rosterStars} alt="" />
+
           </span>
           <p>
             Mobile App for the Salt Lake Stars Basketball team. Built with
@@ -65,7 +70,9 @@ class Main extends React.Component {
 
           <h2 className="major">Personal Fitness App</h2>
           <span className="image main">
-            <img src={pic02} alt="" />
+            <img src={workoutApp} alt="" />
+            <img src={appModal} alt="" />
+
           </span>
           <p>
           Utilized React and Axios to build out an interactive Frontend, while using Express, Node.JS, 
@@ -77,7 +84,7 @@ class Main extends React.Component {
           </p>
           <h2 className="major">Workout Randomizer App</h2>
           <span className="image main">
-            <img src={pic02} alt="" />
+            <img src={randomPic} alt="" />
           </span>
           <p>
           Currently building a workout randomizer in React to help people mix up workout routines. 

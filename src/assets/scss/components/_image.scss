@@ -71,6 +71,17 @@
 			img {
 				width: 100%;
 			}
+		}&.main2 {
+			display: flex;
+			margin: (_size(element-margin) * 1.25) 0;
+			width: 50%;
+			height: 50%;
+
+			img {
+				width: 100%;
+				
+				
+			}
 		}
 
 		@include breakpoint(small) {
